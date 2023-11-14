@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>jedidj</title>
-    <link rel="stylesheet" href="/main/style.css" />
+    <link rel="stylesheet" href="/webSyte/main/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -12,9 +12,15 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <div class="header">
+    <div class="header1">
       <div class="header1-left">
         <div class="social-media">
           <i class="fa-brands fa-facebook-f"></i>
@@ -27,47 +33,292 @@
       </div>
       <div><span>Free in-store delivery</span></div>
       <div class="header1-right">
-        <button onclick="myFunction()" class="dropbtn">English</button>
-        <div id="myDropdown" class="dropdown-content">
-          <a href="#">German</a>
-          <a href="#">French</a>
+        <div class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            English
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">German</a></li>
+            <li><a class="dropdown-item" href="#">French</a></li>
+          </ul>
         </div>
-        <button onclick="myFunction()" class="dropbtn">USD</button>
-        <div id="myDropdown" class="dropdown-content">
-          <a href="#">EUR</a>
-          <a href="#">GBR</a>
+        <div class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            USD
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">EUR</a></li>
+            <li><a class="dropdown-item" href="#">GBP</a></li>
+          </ul>
         </div>
       </div>
     </div>
     <div class="second-part">
-        <svg id="10015.io" viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
-            <path fill="#e0d4ab" d="M348.5,356Q240,472,126,356Q12,240,126,128.5Q240,17,348.5,128.5Q457,240,348.5,356Z" />
-        </svg>
-        <div class="navbar">
-            <div class="header2-left">
-                <a href="#">Varkala</a>
-                <a href="#">Home <span><i class="fa-solid fa-angle-down"></i></span></a>
-                <a href="#">Shop</a>
-                <a href="#">Icons</a>
-                <a href="#">Pages</a>
-                <a href="#">Docs</a>
-            </div>
-            <div class="header2-right">
-                <div class="search-icon">
-                    <input type="text" placeholder="Search">
-                    <span><i class="fa-solid fa-magnifying-glass"></i></span>
-                </div>
-                <div class="user-icons">
-                    <ul>
-                        <li><i class="fa-regular fa-user  fa-xl"></i></li>
-                        <li><i class="fa-regular fa-heart fa-xl"></i> </li><span>0</span>
-                        <li><i class="fa-solid fa-store fa-xl"></i> </li><span>0</span>
-                    </ul>
-                    <button class="side-navbar"><i class="fa-solid fa-bars fa-xl"></i></button>
-                </div>
-            </div>
+      <svg
+        id="10015.io"
+        viewBox="0 0 480 480"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+      >
+        <path
+          fill="#e0d4ab"
+          d="M418,299.5Q359,359,299.5,389Q240,419,169.5,400Q99,381,53,310.5Q7,240,52,168.5Q97,97,168.5,49Q240,1,317.5,43Q395,85,436,162.5Q477,240,418,299.5Z"
+        />
+      </svg>
+      <div class="navbar">
+        <div class="header2-left">
+          <a href="#">Varkala</a>
+          <a href="#">Home <i class="fa-solid fa-angle-down"></i></a>
+          <a href="#">Shop <i class="fa-solid fa-angle-down"></i></a>
+          <a href="#">Icons <i class="fa-solid fa-angle-down"></i></a>
+          <a href="#">Pages <i class="fa-solid fa-angle-down"></i></a>
+          <a href="#">Docs <i class="fa-solid fa-angle-down"></i></a>
         </div>
+        <div class="header2-right">
+          <div class="search-icon">
+            <input type="text" placeholder="Search" />
+            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+          </div>
+          <div class="user-icons">
+            <ul>
+              <li><i class="fa-regular fa-user fa-xl"></i></li>
+              <li><i class="fa-regular fa-heart fa-xl"></i></li>
+              <span>0</span>
+              <li><i class="fa-solid fa-store fa-xl"></i></li>
+              <span>0</span>
+            </ul>
+            <button class="side-navbar">
+              <i class="fa-solid fa-bars fa-xl"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-touch="true">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        
+        <div class="carousel-item active">
+          <div class="slide-contend">
+            <p>TIME IS ALMOST UP</p>
+            <h1>Design clocks on sale</h1>
+            <button class="slide-btn">START SHOPPING</button>
+          </div>
+          <div class="slide-image">
+            <img
+            src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/clock-transparent.png"
+            alt="..."
+          />
+          <svg
+            id="10015.io"
+            viewBox="0 0 480 480"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <path
+              fill="#e7eaf9"
+              d="M398.5,327.5Q380,415,285.5,434.5Q191,454,115.5,395Q40,336,43.5,241.5Q47,147,117,77.5Q187,8,266,58Q345,108,381,174Q417,240,398.5,327.5Z"
+            />
+          </svg>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="slide-contend">
+            <p>OUR ALL-TIME FAVOURITES</p>
+            <h1>Black & White</h1>
+            <p class="text">The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pit</p>
+            <button class="slide-btn">DISCOVER MORE</button>
+          </div>
+          <div class="slide-image">
+            <img src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/chair2-transparent.png" alt="...">
+            <svg id="10015.io" viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+              <path fill="#ffdddd" d="M393,321.5Q334,403,246.5,391.5Q159,380,83.5,310Q8,240,68.5,143.5Q129,47,234.5,57Q340,67,396,153.5Q452,240,393,321.5Z" />
+            </svg>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="slide-contend">
+            <p>OUR ALL-TIME FAVOURITES</p>
+            <h1>BOXXEZ</h1>
+            <p class="text">The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pit</p>
+            <button class="slide-btn">DISCOVER MORE</button>
+          </div>
+          <div class="slide-image">
+            <img src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/box-transparent.png" alt="...">
+            <svg id="10015.io" viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+              <path fill="#f5e6a8" d="M381.5,304Q368,368,304,410.5Q240,453,160,426.5Q80,400,56,320Q32,240,73.5,177.5Q115,115,177.5,61Q240,7,305.5,58Q371,109,383,174.5Q395,240,381.5,304Z" />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+      
+    <div class="container">
+      <div class="head">
+        <h4>TOP CHOICES</h4>
+        <h2>Popular this week</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+      <div class="sale-products">
+        <div class="products-row">
+          <div class="product1">
+            <img class="img-fluid" src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/book-sq.jpg" alt="">
+            <h1>Furniture source book</h1>
+            <p>39.90$</p>
+            <button>SHOP NOW</button>
+          </div>
+          <div class="product2"></div>
+        </div>
+        <div class="products-row">
+          <div class="product3"></div>
+          <div class="product4"></div>
+        </div>
+        <div class="products-row">
+          <div class="product5"></div>
+          <div class="product6"></div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+    <div class="footer1">
+      <div class="centered-inside-div">
+        <div class="footer1-section">
+          <div class="footer1-icon">
+            <i class="fa-solid fa-truck-fast fa-lg"></i>
+          </div>
+          <div class="footer1-content">
+            <p>Free shipping & return</p>
+            <p>Free Shipping over $300</p>
+          </div>
+        </div>
+        <div class="footer1-section">
+          <div class="footer1-icon">
+            <i class="fa-solid fa-dollar-sign fa-lg"></i>
+          </div>
+          <div class="footer1-content">
+            <p>Money back guarantee</p>
+            <p>30 Days Money Back Guarantee</p>
+          </div>
+        </div>
+        <div class="footer1-section">
+          <div class="footer1-icon">
+            <i class="fa-solid fa-percent fa-lg"></i>
+          </div>
+          <div class="footer1-content">
+            <p>Best prices</p>
+            <p>Always the best prices</p>
+          </div>
+        </div>
+        <div class="footer1-section">
+          <div class="footer1-icon">
+            <i class="fa-regular fa-user fa-lg"></i>
+          </div>
+          <div class="footer1-content">
+            <p>020-800-456-747</p>
+            <p>24/7 Available Support</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer2">
+      <div class="centered-inside-div">
+        <div class="footer2-left">
+          <h4>Be in touch</h4>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. At itaque
+            temporibus.
+          </p>
+          <div class="footer2-email-section">
+            <input type="text" placeholder="Your Email Address" /><span
+              ><i class="fa-regular fa-envelope fa-lg"></i
+            ></span>
+          </div>
+        </div>
+        <div class="footer2-right">
+          <div class="list">
+            <p>Shop</p>
+            <ul>
+              <li>For Women</li>
+              <li>For Men</li>
+              <li>Stores</li>
+              <li>Our blog</li>
+              <li>Shop</li>
+            </ul>
+          </div>
+          <div class="list">
+            <p>Company</p>
+            <ul>
+              <li>Login</li>
+              <li>Register</li>
+              <li>Wishlist</li>
+              <li>Our Products</li>
+              <li>Checkouts</li>
+            </ul>
+          </div>
+          <div class="list">
+            <p>Your Account</p>
+            <ul>
+              <li>Login</li>
+              <li>Register</li>
+              <li>Wishlist</li>
+              <li>Our Products</li>
+              <li>Checkouts</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-ending">
+        <div>© 2020 Your company. All rights reserved.</div>
+        <div>
+          <a href="#">Terms and Conditions</a>
+          <a href="#">Privacy and Cookies</a>
+          <a href="#">Accessibility</a>
+          <a href="#">Costumer Data Promise</a>
+        </div>
+      </div>
     </div>
   </body>
-  <script src="script.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
+  <script src="/webSyte/main/script.js"></script>
 </html>
