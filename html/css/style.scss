@@ -74,7 +74,7 @@
       border: none !important;
       z-index: 9999;
       position: absolute;
-      box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.175);
+      box-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.175);
       .categories {
         position: absolute;
         width: 1000px;
@@ -129,73 +129,140 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        column-gap: 10px;
         margin-top: 10px;
         cursor: pointer;
+        li:first-child{
+          margin-right: 20px;
+        }
         span {
           position: relative;
           border-radius: 50%;
           background-color: #e0d4ab;
           top: -15px;
-          left: -18px;
+          left: -10px;
           padding: 2px 6px;
         }
       }
-      .side-navbar {
-        background-color: white;
-        border: none;
-        cursor: pointer;
+    }
+  }
+}
+.side-menu-bars{
+    .offcanvas-body {
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+      a {
+        text-decoration: none;
+        color: grey;
       }
-      .sidenav {
-        height: 100%;
-        width: 0;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        right: 0;
-        background-color: white;
-        transition: 0.3s;
-        padding-top: 60px;
-        transition: all 0.4s;
-        white-space: nowrap;
-        transition: transform 2s;
+    }
+}
 
-        button:hover {
-          transform: rotate(90deg);
+.basket-container-all {
+  .modal {
+    .modal-body {
+      display: flex;
+      flex-direction: row;
+      padding: 20px;
+      column-gap: 50px;
+      .left-modal {
+        img:first-child {
+          width: fit-content;
+          height: 500px;
+          margin-bottom: 20px;
         }
-        .dropdown {
-          .dropdown-menu {
-            font-size: 14px;
+        .swiper-thumbs {
+          display: flex;
+          flex-direction: row;
+          column-gap: 5px;
+          .img-fluid {
+            width: 80px;
+            height: 80px;
+            opacity: 0.5;
+          }
+          .img-fluid:first-child {
+            opacity: 1;
           }
         }
-        .varkala {
-          font-size: 30px;
-          padding-bottom: 50px;
-          font-weight: bold;
-          color: black;
+      }
+      .right-modal {
+        display: flex;
+        flex-direction: column;
+        .row {
+          .bootstrap-select {
+            .selectpicker {
+              padding: 10px;
+              width: 200px;
+              height: 40px;
+              border: 1px solid lightgray;
+              font-weight: bold;
+              letter-spacing: 2px;
+              font-size: 14px;
+            }
+          }
+          .detail-option{
+            label{
+              border-color: #bcac76;
+            }
+            label:hover{
+              background-color: #bcac76;
+            }
+          }
         }
-        a {
-          padding: 8px 8px 8px 32px;
-          text-decoration: none;
-          font-size: 14pxpx;
-          color: #818181;
-          display: block;
-          transition: 0.3s;
-        }
-        a:hover:not(a.varkala) {
-          color: #5f5a4a;
-        }
-        .closebtn {
-          position: relative;
-          top: 0;
-          left: 70%;
-          right: 25px;
-          font-size: 36px;
-          margin-left: 50px;
+        .input-group{
+          .input-group-append{
+            button{
+              height: 50px;
+            }
+          }
         }
       }
-      .sidenav a:hover {
-        color: #877b52;
+    }
+  }
+  .offcanvas {
+    .offcanvas-body {
+      .basket-container {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        .basket-item {
+          display: flex;
+          padding: 5px 20px;
+          justify-content: space-between;
+          border: 1px solid rgb(219, 213, 213);
+          align-items: center;
+          .col {
+            display: flex;
+            flex-direction: column;
+          }
+          .count {
+            padding: 0 10px;
+            width: 30px;
+            text-align: center;
+          }
+          img {
+            margin-right: 10px;
+          }
+          .delete-btn {
+            background-color: lavender;
+            color: gray;
+            border-color: lavender;
+          }
+        }
+        .count-btns {
+          border: 1px solid lightgrey;
+          border-radius: 4px;
+          width: 100px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          button {
+            border-radius: 4px;
+            background-color: white;
+            border: none;
+            color: grey;
+          }
+        }
       }
     }
   }
