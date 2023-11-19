@@ -19,6 +19,7 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <div class="header1">
@@ -79,11 +80,70 @@
       <div class="navbar">
         <div class="header2-left">
           <a href="#">Varkala</a>
-          <a href="#">Home <i class="fa-solid fa-angle-down"></i></a>
-          <a href="#">Shop <i class="fa-solid fa-angle-down"></i></a>
-          <a href="#">Icons <i class="fa-solid fa-angle-down"></i></a>
           <div style="position: relative;">
-            <a href="#" class="pages">Pages <i class="fa-solid fa-angle-down"></i></a>
+            <a href="#" class="home">Home <i class="fa-solid fa-angle-down fa-xs"></i></a>
+            <div class="home-menu">
+              <div class="dropdown-menu show" aria-labelledby="homeDropdown" style="transform: translateY(0px); display: block;"><a class="dropdown-item" href="index.html">Home 1 - Fashion </a><a class="dropdown-item" href="index-2.html">Home 2 - Fashion </a><a class="dropdown-item" href="index-3.html">Home 3 - Design <span class="badge badge-primary-light ml-1">New</span> </a><a class="dropdown-item" href="index-4.html">Home 4 - Design <span class="badge badge-primary-light ml-1">New</span> </a>
+              </div>
+            </div>
+          </div>
+          <div style="position: relative;">
+            <a href="#" class="shop">Shop <i class="fa-solid fa-angle-down fa-xs"></i></a>
+            <div class="shop-menu">
+              <div class="dropdown-menu show" aria-labelledby="shopDropdown" data-translate-x="-50px" style="transform: translateX(-50px) translateY(0px);">
+                <div class="row">
+                  <div class="col-lg-4 col-sm-6 p-lg-5">
+                    <h6 class="dropdown-header h6 pl-lg-0">Shop pages</h6><a class="dropdown-item pl-lg-0" href="category-full.html">Full width </a><a class="dropdown-item pl-lg-0" href="category-full-sidebar.html">Full width with category menu </a><a class="dropdown-item pl-lg-0" href="category-big-products.html">Full width with big products </a><a class="dropdown-item pl-lg-0" href="category-boxed.html">Fixed width </a><a class="dropdown-item pl-lg-0" href="category-sidebar.html">Fixed width &amp; sidebar </a><a class="dropdown-item pl-lg-0" href="category-masonry.html">Fixed width &amp; masonry layout<span class="badge badge-primary-light ml-1">New</span> </a><a class="dropdown-item pl-lg-0" href="category-categories.html">Subcategories </a>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 p-lg-5">
+                    <h6 class="dropdown-header h6 pl-lg-0">Product pages</h6><a class="dropdown-item pl-lg-0" href="detail-1.html">Product with sticky info </a><a class="dropdown-item pl-lg-0" href="detail-2.html">Product with background </a><a class="dropdown-item pl-lg-0" href="detail-3.html">Product standard  </a>
+                  </div>
+                  <div class="col-lg-4">
+                      <img class="bg-image"
+                       src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/kyle-loftus-596319-unsplash-cropped.jpg" alt="">
+                 </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="position: relative;">
+            <a href="#" class="icons">Icons <i class="fa-solid fa-angle-down fa-xs"></i></a>
+          <div class="icons-menu">
+            <div class="dropdown-menu py-lg-0 show" aria-labelledby="iconsDropdown" data-min-width="750px" style="transform: translateY(0px); min-width: 750px; display: block;">
+              <div class="row py-lg-5 px-4">
+                <div class="col-6 col-sm-3 col-md-2 text-center mb-2 mb-lg-5"><a class="text-reset" href="category-categories.html">
+                    <h6>Trousers</h6></a></div>
+                <div class="col-6 col-sm-3 col-md-2 text-center mb-2 mb-lg-5"><a class="text-reset" href="category-categories.html">
+                    <h6>Jackets</h6></a></div>
+                <div class="col-6 col-sm-3 col-md-2 text-center mb-2 mb-lg-5"><a class="text-reset" href="category-categories.html">
+                    <h6>T-Shirts</h6></a></div>
+                <div class="col-6 col-sm-3 col-md-2 text-center mb-2 mb-lg-5"><a class="text-reset" href="category-categories.html">
+                    <h6>Shirts</h6></a></div>
+                <div class="col-6 col-sm-3 col-md-2 text-center mb-2 mb-lg-5"><a class="text-reset" href="category-categories.html">
+                    <h6>Pullovers</h6></a></div>
+                <div class="col-6 col-sm-3 col-md-2 text-center mb-2 mb-lg-5"><a class="text-reset" href="category-categories.html">
+                    <h6>Scarfs</h6></a></div>
+                <div class="col-6 col-sm-3 col-md-2 text-center mb-2 mb-lg-0"><a class="text-reset" href="category-categories.html">
+                    <h6>Shorts</h6></a></div>
+                <div class="col-6 col-sm-3 col-md-2 text-center mb-2 mb-lg-0"><a class="text-reset" href="category-categories.html">
+                    <h6>Underwear</h6></a></div>
+                <div class="col-6 col-sm-3 col-md-2 text-center mb-2 mb-lg-0"><a class="text-reset" href="category-categories.html">
+                    <h6>Watches</h6></a></div>
+                <div class="col-6 col-sm-3 col-md-2 text-center mb-2 mb-lg-0"><a class="text-reset" href="category-categories.html">
+                    <h6>Bags</h6></a></div>
+                <div class="col-6 col-sm-3 col-md-2 text-center mb-2 mb-lg-0"><a class="text-reset" href="category-categories.html">
+                    <h6>Caps</h6></a></div>
+                <div class="col-6 col-sm-3 col-md-2 text-center mb-2 mb-lg-0"><a class="text-reset" href="category-categories.html">
+                    <h6>Accessories</h6></a></div>
+              </div>
+              <div class="p-3 text-center text-sm d-none d-lg-block" style="background-color: #bcac76;">
+                <p class="mb-0">Don't miss our biggest sales this year. Use the code "SUMMER35" at checkout until Jun. 15! </p>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div style="position: relative;">
+            <a href="#" class="pages">Pages <i class="fa-solid fa-angle-down fa-xs"></i></a>
           <div class="pages-menu">
             <div class="inside">
               <div class="section">
@@ -176,7 +236,14 @@
           </div>
           </div>
 
-          <a href="#">Docs <i class="fa-solid fa-angle-down"></i></a>
+          <div style="position: relative;">
+            <a href="#" class="docs">Docs <i class="fa-solid fa-angle-down fa-xs"></i></a>
+            <div class="docs-menu">
+              <div class="dropdown-menu show" aria-labelledby="homeDropdown" style="transform: translateY(0px); display: block;"><a class="dropdown-item" href="docs/index.html">Introduction </a><a class="dropdown-item" href="docs/directory-structure.html">Directory structure </a><a class="dropdown-item" href="docs/gulp.html">Gulp </a><a class="dropdown-item" href="docs/customizing-css.html">Customizing CSS </a><a class="dropdown-item" href="docs/credits.html">Credits </a><a class="dropdown-item" href="docs/changelog.html">Changelog </a>
+                <div class="dropdown-divider"></div><a class="dropdown-item" href="docs/components-bootstrap.html">Bootstrap </a><a class="dropdown-item" href="docs/components-theme.html">Theme </a>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="header2-right">
           <div class="search-icon">
@@ -185,14 +252,13 @@
           </div>
           <div class="user-icons">
             <ul>
-              <li><i class="fa-regular fa-user fa-xl"></i></li>
+              <li><i class="fa-regular fa-user fa-xl" data-bs-toggle="modal" data-bs-target="#exampleModalToggle"></i></li>
               <li><i class="fa-regular fa-heart fa-xl"></i></li>
               <span class="count-icon-responsive">0</span>
               <li
                 data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasScrolling"
-                aria-controls="offcanvasScrolling"
-              >
+                aria-controls="offcanvasScrolling">
                 <i class="fa-solid fa-bag-shopping fa-xl cart-storage"></i>
               </li>
               <span class="productCount count-icon-responsive">0</span>
@@ -210,36 +276,74 @@
         </div>
       </div>
     </div>
-
-    <div
-      id="carouselExampleIndicators"
-      class="carousel slide"
-      data-bs-touch="true"
-    >
-      <div class="carousel-indicators">
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="0"
-          class="active"
-          aria-current="true"
-          aria-label="Slide 1"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="1"
-          aria-label="Slide 2"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="2"
-          aria-label="Slide 3"
-        ></button>
+    
+    <!-- user modal -->
+    <div class="modal fade user-modal" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content" style="width: 600px;">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="login">
+              <button data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Login</button>
+              <button data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Register</button>
+            </div>
+            <hr class="mb-3">
+            <label for="mail">Email</label>
+            <input type="text">
+            <div class="password">
+              <label for="mail">Password</label>
+              <a href="#">Forgot Password?</a>
+            </div>
+            <input type="text" placeholder="Password">
+            <div class="checkbox">
+              <input type="checkbox">
+              <label for="checkbox">Remember me for 30 days</label>
+            </div>
+            <button><i class="fa-solid fa-right-to-bracket fa-xs"></i><span>LOG IN</span></button>
+            <hr class="mb-3">
+            <div class="text-center">
+              <button class="btn btn-outline-primary" title="Connect with Facebook" data-original-title="Connect with Facebook"><i class="fa-fw fa-facebook-f fab"></i><span class="sr-only">Connect with Facebook</span></button>
+              <button class="btn btn-outline-muted" title=" Connect with Google" data-original-title="Connect with Google"><i class="fa-fw fa-google fab"></i><span class="sr-only">Connect with Google</span></button>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
+    <div class="modal fade user-modal" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content"  style="width: 600px;">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="login">
+              <button data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Login</button>
+              <button data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Register</button>
+            </div>
+            <hr class="mb-3">
+            <p>The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pit.</p>
+            <label for="mail">Name</label>
+            <input type="text">
+            <label for="mail">Email</label>
+            <input type="text">
+            <label for="mail">Password</label>
+            <input type="text" placeholder="Password">
+            <button><i class="fa-solid fa-user fa-xs"></i><span>Register</span></button>
+            <hr class="mb-3">
+            <div class="text-center">
+              <button class="btn btn-outline-primary" title="Connect with Facebook" data-original-title="Connect with Facebook"><i class="fa-fw fa-facebook-f fab"></i><span class="sr-only">Connect with Facebook</span></button>
+              <button class="btn btn-outline-muted" title=" Connect with Google" data-original-title="Connect with Google"><i class="fa-fw fa-google fab"></i><span class="sr-only">Connect with Google</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
-        <div class="carousel-item active">
+        <div class="carousel-item active" data-bs-interval="5000">
           <div class="slide-contend">
             <p>TIME IS ALMOST UP</p>
             <h1>Design clocks on sale</h1>
@@ -263,7 +367,7 @@
             </svg>
           </div>
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item" data-bs-interval="5000">
           <div class="slide-contend">
             <p>OUR ALL-TIME FAVOURITES</p>
             <h1>Black & White</h1>
@@ -275,19 +379,13 @@
           </div>
           <div class="slide-image">
             <img
-              src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/chair2-transparent.png"
-              alt="..."
-            />
+              src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/chair2-transparent.png"alt="..."/>
             <svg
               id="10015.io"
               viewBox="0 0 480 480"
               xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-            >
-              <path
-                fill="#ffdddd"
-                d="M393,321.5Q334,403,246.5,391.5Q159,380,83.5,310Q8,240,68.5,143.5Q129,47,234.5,57Q340,67,396,153.5Q452,240,393,321.5Z"
-              />
+              xmlns:xlink="http://www.w3.org/1999/xlink">
+              <path fill="#ffdddd" d="M393,321.5Q334,403,246.5,391.5Q159,380,83.5,310Q8,240,68.5,143.5Q129,47,234.5,57Q340,67,396,153.5Q452,240,393,321.5Z"/>
             </svg>
           </div>
         </div>
@@ -320,27 +418,17 @@
           </div>
         </div>
       </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="prev"
-      >
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="next"
-      >
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-
-    <div
+     
+    <div style="width: 500px;"
       class="offcanvas offcanvas-end side-menu-bars"
       data-bs-scroll="true"
       tabindex="-1"
@@ -792,7 +880,7 @@
             </div>
           </div>
         </div>
-        <div
+        <div style="width: 500px;"
           class="offcanvas offcanvas-end"
           data-bs-scroll="true"
           data-bs-backdrop="true"
@@ -981,4 +1069,8 @@
   ></script>
 <script src="/webSyte/html/javaScript/common.js" type="module"></script>
 <script type="module" src="/webSyte/html/javaScript/script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </html>

@@ -37,7 +37,7 @@ addProductToCart();
 
 function ProductCardSchema(id, name, price, image1, image2) {
   let card = `
-  <div class="col card-container">
+  <div class="col card-container" data-aos="zoom-in" data-aos-once="true">
             <div class="card" style="width: 18rem;">
               <div class="product-image">
                 <img src="${image1}" onmouseover="this.src='${image2}';" onmouseout="this.src='${image1}';" alt="${name}" class="card-img-top"
@@ -112,10 +112,9 @@ function addProductToCart() {
             foundProduct.price
           }</span>
           </div>
-          <button class="btn btn-danger delete-btn" style="width:40px;" data-id=${
+          <button class="btn btn-danger delete-btn" style="background-color: white; border:none;" data-id=${
             product.id
           }>X</button>
-          <div>$<span>${item_total_price.toFixed(2)}</span></div>
       </div>`;
 
     basketContainer.innerHTML += basketItem;
@@ -160,13 +159,67 @@ function addProductToCart() {
 }
 
 //dropdown
-let pageMenu = document.querySelector(".pages");
-pageMenu.onclick = (e) => {
-   let menu = document.querySelector(".pages-menu");
+let homeMenu = document.querySelector(".home");
+homeMenu.onclick = () => {
+   let menu = document.querySelector(".home-menu");
    if(menu.style.display === "block"){
     menu.style.display = "none";
+    homeMenu.innerHTML = `Home<i class="fa-solid fa-angle-down fa-xs"></i>`
    }
    else{
     menu.style.display = "block";
+    homeMenu.innerHTML = `Home<i class="fa-solid fa-angle-up fa-xs"></i>`
    }
 };
+
+let shopMenu = document.querySelector(".shop");
+shopMenu.onclick = () => {
+   let menu = document.querySelector(".shop-menu");
+   if(menu.style.display === "block"){
+    menu.style.display = "none";
+    shopMenu.innerHTML = `Shop <i class="fa-solid fa-angle-down fa-xs"></i>`
+   }
+   else{
+    menu.style.display = "block";
+    shopMenu.innerHTML = `Shop <i class="fa-solid fa-angle-up fa-xs"></i>`
+   }
+};
+
+let pageMenu = document.querySelector(".pages");
+pageMenu.onclick = () => {
+   let menu = document.querySelector(".pages-menu");
+   if(menu.style.display === "block"){
+    menu.style.display = "none";
+    pageMenu.innerHTML = `Pages <i class="fa-solid fa-angle-down fa-xs"></i>`
+   }
+   else{
+    menu.style.display = "block";
+    pageMenu.innerHTML = `Pages <i class="fa-solid fa-angle-up fa-xs"></i>`
+   }
+};
+
+let docsMenu = document.querySelector(".docs");
+docsMenu.onclick = () => {
+   let menu = document.querySelector(".docs-menu");
+   if(menu.style.display === "block"){
+    menu.style.display = "none";
+    docsMenu.innerHTML = `Docs <i class="fa-solid fa-angle-down fa-xs"></i>`
+   }
+   else{
+    menu.style.display = "block";
+    docsMenu.innerHTML = `Docs <i class="fa-solid fa-angle-up fa-xs"></i>`
+   }
+};
+let iconsMenu = document.querySelector(".icons");
+iconsMenu.onclick = () => {
+   let menu = document.querySelector(".icons-menu");
+   if(menu.style.display === "block"){
+    menu.style.display = "none";
+    iconsMenu.innerHTML = `Icons<i class="fa-solid fa-angle-down fa-xs"></i>`
+   }
+   else{
+    menu.style.display = "block";
+    iconsMenu.innerHTML = `Icons<i class="fa-solid fa-angle-up fa-xs"></i>`
+   }
+};
+
